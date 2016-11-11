@@ -1,3 +1,26 @@
+/* 
+ * Experiment to find out what happens when printf's argument string
+ * contains \c, where c is some character not listed above.
+ *
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * The following are legal escape sequences:
+ * (description, ASCII char, escape sequense, decimal ASCII code)
+ *
+ * audible alert (bell)    BEL   \a      7
+ * backspace               BS    \b      8
+ * horizontal tab          HT    \t      9
+ * newline                 LF    \n     10
+ * vertical tab            VT    \v     11
+ * formfeed                FF    \f     12
+ * carriage return         CR    \r     13
+ * double quote            "     \"     34
+ * single quote            '     \'     39
+ * question mark           ?     \?     63
+ * backslash               \     \\     92
+ * octal number            ooo   \ooo
+ * hexadecimal number      hh    \xhh
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 

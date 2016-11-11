@@ -1,7 +1,14 @@
+/*
+ * Write a program to print a histogram of the lengths of words in it's
+ * input. It is easy to draw a histogram with the bars horizontal; a
+ * vertical orientation is more challenging.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Logic:
+/* 
+ * Logic:
  * A: c is a regular character 
  * if A and state == IN: lword++
  * if A and state == OUT: lword++, state = IN

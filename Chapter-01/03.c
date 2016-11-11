@@ -1,3 +1,8 @@
+/*
+ * Modify the temparature conversion program to print a heading above
+ * the table.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
