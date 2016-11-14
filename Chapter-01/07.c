@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
 	printf("EOF: %d\n", EOF);
     return EXIT_SUCCESS;

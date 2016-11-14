@@ -8,7 +8,8 @@
 
 float ftoc(float);
 
-int main() {
+int main(void) 
+{
 	int fahr;
 
 	printf("=========\n");  
