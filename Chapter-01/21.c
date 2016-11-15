@@ -3,12 +3,8 @@
  * minimum number of tabs and blanks to achieve the same spacing. Use
  * the same stops as for detab. When either a tab or a single blank
  * would suffice to reach a tab stop, which should be given preference?
- */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-/* 
+ *
+ * ------ 
  * Logic:
  * A: c is a regular character (character except ' ' and '\t')
  * REGULAR: indicates that input is a regular character
@@ -19,6 +15,9 @@
  * if not A and REGULAR: state = NONREGULAR, last_regular_col = col, update_col(c)
  * if not A and NONREGULAR: update_col(c)
  */
+
+#include <stdio.h>
+#include <stdlib.h>
 
 #define TABWIDTH 8
 #define REGULAR 1

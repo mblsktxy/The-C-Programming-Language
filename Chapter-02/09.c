@@ -3,7 +3,7 @@
  * 1-bit in x. Explain why. Use this observation to write a faster
  * version of bitcount.
  *
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * ------------------
  * Original bitcount:
  * // bitcount: count 1 bits in x
  * int bitcount(unsigned x) {

@@ -2,12 +2,8 @@
  * Revise the main routine of the longest-line program so it will
  * correctly print the length of arbitrarily long input lines, and as
  * much as possible of the text.
- */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-/* 
+ *
+ * ------ 
  * Logic:
  * A: output from get_line includes '\n'
  *    which is equivalent to line[len-1] == '\n'
@@ -31,6 +27,9 @@
  * if not A and state == OLD: 
  *      line_length += len
  */
+
+#include <stdio.h>
+#include <stdlib.h>
 
 #define MAXLINE 10    /* maximum input line size */
 #define NEW 1

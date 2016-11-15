@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define FIND_AN_MATCH 1
+#define FOUND_A_MATCH 1
 #define NO_MATCH 0
 
 void squeeze(char *, char *);
@@ -29,7 +29,7 @@ void squeeze(char s1[], char s2[])
 		state = NO_MATCH;
 		for (j = 0; s2[j] != '\0'; j++) {
 			if (s1[i] == s2[j]) {
-				state = FIND_AN_MATCH;
+				state = FOUND_A_MATCH;
 				break;
 			}
 		}

@@ -1,12 +1,8 @@
 /*
  * Write a program to copy its input to its output, replacing each string
  * of one or more blanks by a sinle blank.
- */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-/* 
+ *
+ * ----------------------------------- 
  * The logic involved in this problem:
  * state BLANK indicates the previous input is a blank
  * state NOTBLANK indicates the previous input is not a blank
@@ -17,6 +13,9 @@
  * if not A and state == BLANK: print ' ', print c, state = NOTBLANK 
  * if not A and state == NOTBLANK: print c
  */
+
+#include <stdio.h>
+#include <stdlib.h>
 
 #define BLANK 1
 #define NOTBLANK 0

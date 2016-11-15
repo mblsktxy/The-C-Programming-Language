@@ -1,11 +1,7 @@
 /*
  * Write a program that prints its input one word per line.
- */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-/* 
+ *
+ * ----------------------------------- 
  * The logic involved in this problem:
  * state IN indicates the previous input is in the word
  * state OUT indicates the previous input is not in the word
@@ -16,6 +12,9 @@
  * if not A and state == OUT: 
  * if not A and state == IN: print \n, state = OUT 
  */
+
+#include <stdio.h>
+#include <stdlib.h>
 
 #define IN 1
 #define OUT 0

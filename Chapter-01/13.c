@@ -2,22 +2,21 @@
  * Write a program to print a histogram of the lengths of words in it's
  * input. It is easy to draw a histogram with the bars horizontal; a
  * vertical orientation is more challenging.
- */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-/* 
+ * 
+ * ------
  * Logic:
  * A: c is a regular character 
  * if A and state == IN: lword++
  * if A and state == OUT: lword++, state = IN
  * if not A and state == IN: if lword <= MAXWORDLEN:
-                                nword[lword-1]++, lword = 0
+                                 nword[lword-1]++, lword = 0
                              else:
-                                nword[MAXWORDLEN]++, lword = 0
+                                 nword[MAXWORDLEN]++, lword = 0
  * if not A and state == OUT: state = OUT
  */
+
+#include <stdio.h>
+#include <stdlib.h>
 
 #define IN  1  /* inside a word */
 #define OUT 0  /* outside a word */

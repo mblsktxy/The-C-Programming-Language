@@ -14,8 +14,8 @@ void reverse(char s[]);
 
 int main(void)
 {
-    int len;            /* current line length */
-    char line[MAXLINE];     /* current input line */
+    int len;             /* current line length */
+    char line[MAXLINE];  /* current input line */
 
     while ((len = get_line(line, MAXLINE)) > 0) {
         reverse(line);
@@ -24,7 +24,7 @@ int main(void)
     return EXIT_SUCCESS;
 }
 
-/* get_line:  read a line into s, return length */
+/* get_line: read a line into s, return length */
 int get_line(char s[], int lim)
 {
     int c, i;
@@ -39,7 +39,7 @@ int get_line(char s[], int lim)
     return i;
 }
 
-/* reverse:  reverses the character string s */
+/* reverse: reverses the character string s */
 void reverse(char s[])
 {
     int i, l;

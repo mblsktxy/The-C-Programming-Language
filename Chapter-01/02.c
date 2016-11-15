@@ -2,7 +2,7 @@
  * Experiment to find out what happens when printf's argument string
  * contains \c, where c is some character not listed above.
  *
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * -----------------------------------------
  * The following are legal escape sequences:
  * (description, ASCII char, escape sequense, decimal ASCII code)
  *

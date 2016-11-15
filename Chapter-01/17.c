@@ -1,12 +1,8 @@
 /*
  * Write a program to print all input lines that are longer than 80
  * characters.
- */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-/* 
+ *
+ * ------ 
  * Logic:
  * A: output from get_line does not include '\n'
  *    which is equivalent to line[len-1] != '\n'
@@ -16,6 +12,9 @@
  * if not A and longline: print(line), longline = FALSE
  * if not A and not longline:
  */
+
+#include <stdio.h>
+#include <stdlib.h>
 
 #define TRUE  1
 #define FALSE 0
