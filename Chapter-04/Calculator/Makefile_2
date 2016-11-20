@@ -1,0 +1,19 @@
+all: calculator
+
+calculator: main.o getop.o stack.o getch.o
+	cc main.o getop.o stack.o getch.o -o calculator -lm
+
+main.o: main.c calc.h
+	cc -c main.c
+
+getop.o: getop.c calc.h
+	cc -c getop.c
+
+stack.o: stack.c
+	cc -c stack.c
+
+getch.o: getch.c
+	cc -c getch.c
+
+clean:
+	rm *o calculator

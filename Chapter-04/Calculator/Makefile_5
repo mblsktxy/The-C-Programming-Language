@@ -1,0 +1,16 @@
+OBJS = main.o getop.o stack.o getch.o
+CC = cc
+CFLAGS = -c -Wall
+
+calculator: $(OBJS)
+	$(CC) $(OBJS) -o calculator -lm
+
+# $< is the prereq set, $@ is the object set
+$(OBJS): %.o: %.c
+	$(CC) $(CFLAGS) $< -o $@
+# When adding @ to the recipe, ie. @$(CC) $(CFLAGS) $< -o $@,
+# make will not show the command in the terminal
+
+.PHONY: clean
+clean:
+	-rm $(OBJS) calculator

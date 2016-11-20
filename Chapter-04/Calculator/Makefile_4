@@ -1,0 +1,16 @@
+OBJS = main.o getop.o stack.o getch.o
+CC = cc
+CFLAGS = -c -Wall
+
+calculator: $(OBJS)
+	$(CC) $(OBJS) -o calculator -lm
+
+# make can do cc -c whatever.o automatically
+main.o: calc.h
+getop.o: calc.h
+stack.o:
+getch.o:
+
+.PHONY: clean
+clean:
+	-rm $(OBJS) calculator

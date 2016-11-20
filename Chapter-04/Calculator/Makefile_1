@@ -1,0 +1,3 @@
+# -lm is for use of <math.h>
+all:
+	cc main.c getop.c stack.c getch.c -o calculator -lm

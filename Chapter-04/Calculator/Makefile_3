@@ -1,0 +1,26 @@
+# I am a comment, and I want to represent all the object files by OBJS
+OBJS = main.o getop.o stack.o getch.o
+# I am comment number 2. I want to say that the variable CC will be
+# the compiler to use.
+CC = cc
+# I am comment number 3. I want to say that CFLAGS will be the options 
+# I'll pass to the compiler.
+CFLAGS = -c -Wall
+
+calculator: $(OBJS)
+	$(CC) $(OBJS) -o calculator -lm
+
+main.o: main.c calc.h
+	$(CC) $(CFLAGS) main.c
+
+getop.o: getop.c calc.h
+	$(CC) $(CFLAGS) getop.c
+
+stack.o: stack.c
+	$(CC) $(CFLAGS) stack.c
+
+getch.o: getch.c
+	$(CC) $(CFLAGS) getch.c
+
+clean:
+	rm *o calculator

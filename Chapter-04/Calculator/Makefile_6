@@ -1,0 +1,18 @@
+CC = cc
+CFLAGS = -c -Wall
+LFLAGS =
+SOURCES = main.c getop.c stack.c getch.c
+OBJECTS = $(SOURCES: .c = .o)
+# Another way of substitution
+# OBJECTS = $(SOURCES: %.c = %.o)
+EXECUTABLE = calculator
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CC) $(LFLAGS) $(OBJECTS) -o $@ -lm
+
+.c.o:
+	$(CC) $(CFLAGS) $< -o $@
+# Another way of doing this is
+# %.o: %.c ; $(CC) $(CFLAGS) $< -o $@
