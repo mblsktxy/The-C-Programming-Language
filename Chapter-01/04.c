@@ -6,8 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
-{
+int main(void) {
     float fahr, celsius;
     int lower, upper, step;
 

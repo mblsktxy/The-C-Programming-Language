@@ -10,8 +10,7 @@
 
 #define TABWIDTH 8
 
-int main(void) 
-{
+int main(void) {
 	int c, i, col;
 
 	col = 0;

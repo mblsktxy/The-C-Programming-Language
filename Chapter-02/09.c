@@ -20,15 +20,13 @@
 
 int bitcount(unsigned x);
 
-int main(void)
-{
+int main(void) {
     printf("%d\n", bitcount(0xFF));
     return EXIT_SUCCESS;
 }
 
 /* bitcount:  count set bits in x */
-int bitcount(unsigned x)
-{
+int bitcount(unsigned x) {
     int b;
     for (b = 0; x != 0; x &= (x-1))
         b++;

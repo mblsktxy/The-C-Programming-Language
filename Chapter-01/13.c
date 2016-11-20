@@ -22,8 +22,7 @@
 #define OUT 0  /* outside a word */
 #define MAXWORDLEN 15
 
-int main(void)
-{
+int main(void) {
     int c, state;
     int i, j;
     int lword = 0;

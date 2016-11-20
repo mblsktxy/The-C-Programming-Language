@@ -9,8 +9,7 @@
 
 unsigned invert(unsigned, int, int);
 
-int main(void)
-{
+int main(void) {
 	printf("invert(0xFF,5,2): %u\n", invert(0xFF,5,2));
 	return EXIT_SUCCESS;
 }

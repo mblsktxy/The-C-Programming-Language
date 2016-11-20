@@ -10,8 +10,7 @@
 
 int get_line(char line[], int maxline);
 
-int main(void)
-{
+int main(void) {
     char line[MAXLINE];    /* current input line */
     int len;
     int i;
@@ -31,8 +30,7 @@ int main(void)
 }
 
 /* get_line:  read a line into s, return length */
-int get_line(char s[], int lim)
-{
+int get_line(char s[], int lim) {
     int c, i;
 
     for (i = 0; i < lim-1 && (c = getchar()) != EOF && c != '\n'; ++i)

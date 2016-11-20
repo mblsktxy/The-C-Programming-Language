@@ -20,8 +20,7 @@
 #define BLANK 1
 #define NOTBLANK 0
 
-int main(void)
-{
+int main(void) {
     int c, state;
 
     state = NOTBLANK;

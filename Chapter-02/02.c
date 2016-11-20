@@ -12,8 +12,7 @@
 
 #define LIMIT 512
 
-int main(void)
-{
+int main(void) {
     int i;
     int c, lim;
     char s[LIMIT];

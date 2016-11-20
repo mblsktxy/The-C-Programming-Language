@@ -26,8 +26,7 @@
 int update_col(int, int);
 void entab(int, int);
 
-int main(void)
-{
+int main(void) {
     int c, i, state;
     int col, last_regular_col;
 

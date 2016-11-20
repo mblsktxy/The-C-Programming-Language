@@ -10,15 +10,13 @@
 
 int any(char *, char *);
 
-int main(void) 
-{
+int main(void) {
 	char s1[] = "abcddef";
 	char s2[] = "fd"; 
 	printf("%d\n", any(s1, s2));
 }
 
-int any(char s1[], char s2[])
-{
+int any(char s1[], char s2[]) {
 	int i, j;
 
 	for (i = 0; s1[i] != '\0'; i++)

@@ -5,8 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
-{
+int main(void) {
     int c, nb, nt, nl;
 
     nb = nt = nl = 0;

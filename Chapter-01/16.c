@@ -38,8 +38,7 @@
 int get_line(char line[], int maxline);
 void copy(char to[], char from[]);
 
-int main(void)
-{
+int main(void) {
     int len;                /* current line length */
     int max;                /* maximum length seen so far */
     int line_length;        /* record the potential length of a line */
@@ -83,8 +82,7 @@ int main(void)
 /* get_line:  read a line into s, return length 
  * this line does not include the '\0' character
  */
-int get_line(char s[], int lim)
-{
+int get_line(char s[], int lim) {
     int c, i;
 
     for (i=0; i<lim-1 && (c=getchar())!=EOF && c!='\n'; ++i)
@@ -98,8 +96,7 @@ int get_line(char s[], int lim)
 }
 
 /* copy:  copy 'from' into 'to'; assume to is big enough */
-void copy(char to[], char from[])
-{
+void copy(char to[], char from[]) {
     int i;
 
     i = 0;

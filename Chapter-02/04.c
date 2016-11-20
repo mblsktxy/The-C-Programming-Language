@@ -11,16 +11,14 @@
 
 void squeeze(char *, char *);
 
-int main(void) 
-{
+int main(void) {
 	char s1[] = "abcddef";
 	char s2[] = "abd"; 
 	squeeze(s1, s2);
 	printf("%s\n", s1);
 }
 
-void squeeze(char s1[], char s2[])
-{
+void squeeze(char s1[], char s2[]) {
 	int i, j, k;
 	int state;
 

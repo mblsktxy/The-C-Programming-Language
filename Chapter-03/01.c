@@ -16,8 +16,7 @@ int64_t utime_now(void) {
 }
 
 /* binsearch:  find x in v[0] <= v[1] <= ... <= v[n-1] */
-int binsearch1(int x, int v[], int n)
-{
+int binsearch1(int x, int v[], int n) {
     int low, high, mid;
     
     low = 0;
@@ -35,8 +34,7 @@ int binsearch1(int x, int v[], int n)
 }
 
 /* binsearch:  find x in v[0] <= v[1] <= ... <= v[n-1] */
-int binsearch2(int x, int v[], int n)
-{
+int binsearch2(int x, int v[], int n) {
     int low, high, mid;
     
     low = 0;
@@ -51,8 +49,7 @@ int binsearch2(int x, int v[], int n)
     return (x == v[low]) ? low : -1;
 }
 
-int main(void)
-{
+int main(void) {
     int v[10] = {1, 3, 6, 9, 12, 18, 20, 22, 24, 25};
     int x = 2;
     int index1, index2;

@@ -12,8 +12,7 @@
 void itob(int, char *, int);
 void reverse(char *);
 
-int main(void) 
-{
+int main(void) {
 	char s[15];
 	itob(100,s,2);
 	printf("%s\n", s);
@@ -26,8 +25,7 @@ int main(void)
 }
 
 /* itob:  convert n to characters in s */
-void itob(int n, char s[], int b)
-{
+void itob(int n, char s[], int b) {
     int i, sign;
     char base[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -46,8 +44,7 @@ void itob(int n, char s[], int b)
 }
 
 /* reverse:  reverse string s in place */
-void reverse(char s[])
-{
+void reverse(char s[]) {
     int c, i, j;
 
     for (i = 0, j = strlen(s)-1; i < j; i++, j--) {

@@ -24,8 +24,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
-{
+int main(void) {
     /* legal escape sequences */
     printf("audible alert (bell) BEL   \\a     %d\n" , '\a');
     printf("backspace            BS    \\b     %d\n" , '\b');

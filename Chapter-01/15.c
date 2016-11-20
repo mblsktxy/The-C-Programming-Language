@@ -8,8 +8,7 @@
 
 float ftoc(float);
 
-int main(void) 
-{
+int main(void) {
 	int fahr;
 
 	printf("=========\n");  
@@ -22,8 +21,7 @@ int main(void)
     return EXIT_SUCCESS;
 }
 
-float ftoc(float f)
-{
+float ftoc(float f) {
     float c = (5.0/9.0) * (f-32.0);
     return c;
 }

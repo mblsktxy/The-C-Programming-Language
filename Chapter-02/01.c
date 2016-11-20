@@ -10,8 +10,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
-int main(void)
-{
+int main(void) {
     printf("char:\n");
     printf("Size of char: %d bits\n", CHAR_BIT);
     printf("Maximum value of char: %d\n", CHAR_MAX);

@@ -8,8 +8,7 @@
 
 #define TABLELEN 128 /* number of characters in ASCII-I */
 
-int main(void)
-{
+int main(void) {
     int c, nchar[TABLELEN];
 
     for (c = 0; c != TABLELEN; c++)

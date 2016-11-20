@@ -25,8 +25,7 @@
 void expand(char*, char*);
 bool valid_shorthand(char, char);
 
-int main(void)
-{
+int main(void) {
     char s1[512] = "-a-z 0-9 a-d-f a-f-g-i -0-2 some text 1-1 WITH CAPITALS! 0-0 5-3 -";
     char s2[512];
     expand(s1, s2);

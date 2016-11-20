@@ -65,8 +65,7 @@ void unescape(char s[], char t[]) {
 	t[j] = '\0';
 }
 
-int main(void) 
-{
+int main(void) {
     int i;
     char c, s[1024], t[1024];
     

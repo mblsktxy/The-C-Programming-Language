@@ -9,8 +9,7 @@
 
 unsigned setbits(unsigned, int, int, unsigned);
 
-int main(void) 
-{
+int main(void) {
 	printf("setbits(0xff, 5, 2, 0x2): %u\n", setbits(0xff, 5, 2, 0x2));
 	return EXIT_SUCCESS;
 }

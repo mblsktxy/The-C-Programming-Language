@@ -1,3 +1,7 @@
 Chapter-01/*.out
 Chapter-02/*.out
 Chapter-03/*.out
+Chapter-04/*.out
+Chapter-04/Calculator/*.o
+Chapter-04/Calculator/calculator
+Chapter-04/Calculator/*.gch

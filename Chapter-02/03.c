@@ -10,8 +10,7 @@
 
 int htoi(char s[]);
 
-int main(void)
-{
+int main(void) {
     char s[1024];
     int i, c;
     for (i = 0; (c = getchar()) != '\n'; i++)
@@ -22,8 +21,7 @@ int main(void)
 }
 
 /* htoi:  convert hexdicimal string s to integer */
-int htoi(char s[])
-{
+int htoi(char s[]) {
     int i;
     int c, n;
 

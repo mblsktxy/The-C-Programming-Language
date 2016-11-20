@@ -9,8 +9,7 @@
 int get_bits(unsigned);
 unsigned rightrot(unsigned, int);
 
-int main(void)
-{
+int main(void) {
 	printf("rightrot(0xCF,2): %u\n", rightrot(0xCF,2));
 	return EXIT_SUCCESS;
 }
