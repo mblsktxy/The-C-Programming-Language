@@ -39,27 +39,27 @@ void unescape(char s[], char t[]) {
 	state == NONSLASH;
 	for (i = j = 0; s[i] != '\0'; i++) {
 		switch (s[i]) {
-			case '\\':
-				state = SLASH;
-				break;
-			case 'n':
-				if (state == SLASH)
-					t[j++] = '\n';
-				else
-					t[j++] = s[i];
-				state = NONSLASH;
-				break;
-			case 't':
-				if (state == SLASH)
-					t[j++] = '\t';
-				else
-					t[j++] = s[i];
-				state = NONSLASH;
-				break;
-			default:
+		case '\\':
+			state = SLASH;
+			break;
+		case 'n':
+			if (state == SLASH)
+				t[j++] = '\n';
+			else
 				t[j++] = s[i];
-				state = NONSLASH;
-				break;
+			state = NONSLASH;
+			break;
+		case 't':
+			if (state == SLASH)
+				t[j++] = '\t';
+			else
+				t[j++] = s[i];
+			state = NONSLASH;
+			break;
+		default:
+			t[j++] = s[i];
+			state = NONSLASH;
+			break;
 		}
 	}
 	t[j] = '\0';

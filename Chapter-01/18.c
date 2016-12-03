@@ -20,7 +20,7 @@ int main(void) {
             if (line[i] != ' ' && line[i] != '\t')
                 break;
         }
-        if ( i!= -1) {
+        if (i != -1) {
             line[i+1] = '\n';
             line[i+2] = '\0';
             printf("%s", line);
