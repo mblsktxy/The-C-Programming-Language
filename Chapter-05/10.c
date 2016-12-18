@@ -7,9 +7,8 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>  /* for use of atof() and EXIT_SUCCESS */ 
 #include <ctype.h>
-#include <string.h>
 #include <math.h>
 
 void push(double);
