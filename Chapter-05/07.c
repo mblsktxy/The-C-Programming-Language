@@ -7,8 +7,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAXLINES 5000     /* max #lines to be sorted */
-#define MAXLEN 1000   /* max length of any input line */
+#define MAXLINES 5000   /* max #lines to be sorted */
+#define MAXLEN 1000     /* max length of any input line */
 
 /* lineptr is an array of MAXLINES elements, each element of which
  * is a pointer to a char. */
